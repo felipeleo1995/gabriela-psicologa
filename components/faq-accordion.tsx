@@ -12,17 +12,17 @@ const faqData: FAQItem[] = [
   {
     question: "Como agendar uma sessão?",
     answer:
-      "Entre em contato para verificar disponibilidade de horários. Os atendimentos acontecem de terça à quinta, durante manhã e tarde.",
+      "Entre em contato para verificar disponibilidade de horários. Os atendimentos acontecem de segunda a sexta, nos períodos da manhã, tarde e noite.",
   },
   {
-    question: "Como saber mais sobre parcerias, palestras e rodas de conversa?",
+    question: "Como saber mais sobre parcerias?",
     answer:
-      "Para informações sobre parcerias, palestras e rodas de conversa, entre em contato através do WhatsApp ou Instagram. Estarei feliz em compartilhar mais detalhes sobre essas oportunidades de colaboração e eventos.",
+      "Para informações sobre parcerias, entre em contato através do WhatsApp ou Instagram. Estarei feliz em compartilhar mais detalhes sobre essas oportunidades de colaboração.",
   },
   {
     question: "Onde me encontrar?",
     answer:
-      "Você pode me encontrar nas redes sociais @yasminmartins.psi no Instagram, ou entrar em contato diretamente pelo WhatsApp. Os atendimentos são realizados de forma online, proporcionando maior flexibilidade e comodidade.",
+      "Você pode me encontrar nas redes sociais @gabrielaferreira_psi no Instagram, ou entrar em contato diretamente pelo WhatsApp. Os atendimentos são realizados de forma online, proporcionando maior flexibilidade e comodidade.",
   },
 ]
 
