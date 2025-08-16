@@ -174,7 +174,7 @@ export default function Home() {
               <div className="flex justify-center lg:justify-end">
                 <div className="border-4 border-black hover:shadow-xl transition-shadow duration-300">
                   <Image
-                    src="/placeholder.svg?height=600&width=400&text=Gabriela+Faria+Ferreira"
+                    src="foto.avif"
                     alt="Gabriela Faria Ferreira - Psicóloga Clínica especializada em Terapia Cognitivo Comportamental"
                     width={400}
                     height={600}
