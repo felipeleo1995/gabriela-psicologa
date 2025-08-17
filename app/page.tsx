@@ -116,71 +116,80 @@ export default function Home() {
       </section>
 
       {/* Sobre Mim Section */}
-      <section id="sobre" className="py-20 px-6 border-t-2 border-black">
+        <section id="sobre" className="py-20 px-6 border-t-2 border-black">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Text Content */}
-            <ScrollAnimation>
-              <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-gray-800 mb-8">
-                  SOBRE MIM
-                </h2>
+          <ScrollAnimation>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide text-gray-800 mb-16 text-center">
+              SOBRE MIM
+            </h2>
+          </ScrollAnimation>
 
-                <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-                  <p>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+            {/* Photo - Takes 2 columns on large screens */}
+            <ScrollAnimation delay={100} className="lg:col-span-2">
+              <div className="flex justify-center">
+                <div className="relative">
+                  {/* Main photo container */}
+                  <div className="relative border-4 border-black hover:shadow-2xl transition-all duration-500 hover:scale-105 transform">
+                    <Image
+                      src="foto.avif"
+                      alt="Gabriela Faria Ferreira - Psicóloga Clínica especializada em Terapia Cognitivo Comportamental"
+                      width={350}
+                      height={450}
+                      className="object-cover w-full h-full"
+                      // loading="lazy"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            {/* Text Content - Takes 3 columns on large screens */}
+            <ScrollAnimation delay={200} className="lg:col-span-3">
+              <div className="space-y-6">
+                <div className="space-y-5 text-gray-700 leading-relaxed text-sm sm:text-base">
+                  <p className="text-lg font-light text-gray-800 mb-6">
                     Olá! Eu sou Gabriela Faria Ferreira, Psicóloga Clínica (CRP: 06/154488) e Psicóloga Social.
                   </p>
 
                   <p>
-                    Trabalho com a Terapia Cognitivo Comportamental (TCC) em meus atendimentos, uma abordagem científica e eficaz que foca na relação entre pensamentos, sentimentos e comportamentos.
+                    Trabalho com a Terapia Cognitivo Comportamental (TCC) em meus atendimentos, uma abordagem científica
+                    e eficaz que foca na relação entre pensamentos, sentimentos e comportamentos.
                   </p>
 
                   <p>
-                    Atendo adolescentes e adultos de forma online, oferecendo um espaço seguro e acolhedor para o desenvolvimento do autoconhecimento e bem-estar emocional.
+                    Atendo adolescentes e adultos de forma online, oferecendo um espaço seguro e acolhedor para o
+                    desenvolvimento do autoconhecimento e bem-estar emocional.
                   </p>
 
                   <p>
-                    A Terapia Cognitivo Comportamental é uma das abordagens mais estudadas e validadas cientificamente na Psicologia. Ela nos ajuda a identificar padrões de pensamento que podem estar causando sofrimento e desenvolver estratégias práticas para lidar com desafios do dia a dia.
+                    A Terapia Cognitivo Comportamental é uma das abordagens mais estudadas e validadas cientificamente
+                    na Psicologia. Ela nos ajuda a identificar padrões de pensamento que podem estar causando sofrimento
+                    e desenvolver estratégias práticas para lidar com desafios do dia a dia.
                   </p>
 
                   <p>
-                    Acredito que cada pessoa tem potencial para crescer e se desenvolver. Meu papel é acompanhar você nessa jornada, oferecendo ferramentas e técnicas que promovam mudanças positivas e duradouras em sua vida.
+                    Acredito que cada pessoa tem potencial para crescer e se desenvolver. Meu papel é acompanhar você
+                    nessa jornada, oferecendo ferramentas e técnicas que promovam mudanças positivas e duradouras em sua
+                    vida.
                   </p>
 
                   <p>
-                    Como Psicóloga Social, também tenho interesse especial em compreender como os contextos sociais influenciam nosso bem-estar e desenvolvimento pessoal.
-                  </p>
-
-                  <p>
-                    Neste site, você conhecerá mais sobre meu trabalho e como posso ajudá-lo em sua jornada de autoconhecimento e crescimento pessoal.
+                    Como Psicóloga Social, também tenho interesse especial em compreender como os contextos sociais
+                    influenciam nosso bem-estar e desenvolvimento pessoal.
                   </p>
                 </div>
 
                 <div className="pt-6">
                   <Button
                     variant="outline"
-                    className="btn-rose-pastel px-6 sm:px-8 py-3 bg-transparent hover:scale-105 transform transition-all duration-200"
-                    onClick={() => window.open("https://wa.me/5511953934091", "_blank")}
+                    className="btn-rose-pastel px-8 py-3 bg-transparent hover:scale-105 transform transition-all duration-200 text-base"
+                    onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
                     aria-label="Entrar em contato via WhatsApp"
                   >
                     Fale diretamente comigo
                   </Button>
-                </div>
-              </div>
-            </ScrollAnimation>
-
-            {/* Photo */}
-            <ScrollAnimation delay={200}>
-              <div className="flex justify-center lg:justify-end">
-                <div className="border-4 border-black hover:shadow-xl transition-shadow duration-300">
-                  <Image
-                    src="foto.avif"
-                    alt="Gabriela Faria Ferreira - Psicóloga Clínica especializada em Terapia Cognitivo Comportamental"
-                    width={400}
-                    height={600}
-                    className="object-cover"
-                    loading="lazy"
-                  />
                 </div>
               </div>
             </ScrollAnimation>
@@ -202,7 +211,7 @@ export default function Home() {
               <div className="flex justify-center lg:justify-start">
                 <div className="border-4 border-black hover:shadow-xl transition-shadow duration-300">
                   <Image
-                    src="/placeholder.svg?height=500&width=400&text=Ambiente+Terapêutico"
+                    src="trabalho.jpg"
                     alt="Ambiente terapêutico elegante e acolhedor"
                     width={400}
                     height={500}
